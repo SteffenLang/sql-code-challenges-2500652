@@ -2,5 +2,6 @@
 -- Diese Liste soll Vornamen, Nachnamen 
 -- und die E-Mail-Adresse der Kundinnen/Kunden enthalten.
 -- Sortieren Sie die Liste alphabetisch nach den Nachnamen.
-
-
+SELECT Vorname, Nachname, Email 
+FROM KUNDEN 
+ORDER BY Nachname ASC;
