@@ -9,10 +9,12 @@ SELECT SpeiseID, Name, Beschreibung, Preis
 FROM Speise
 ORDER BY Preis ASC;
 
-SELECT SpeiseID, Name, Beschreibung, Preis 
+SELECT Typ, SpeiseID, Name, Beschreibung, Preis 
 FROM Speise
-WHERE Typ IN ('Vorspeise','Getränk');
+WHERE Typ IN ('Vorspeise','Getränk')
+ORDER BY Typ;
 
-SELECT SpeiseID, Name, Beschreibung, Preis 
+SELECT Typ, SpeiseID, Name, Beschreibung, Preis 
 FROM Speise
-WHERE Typ NOT IN ('Getränk');
+WHERE Typ NOT IN ('Getränk')
+ORDER BY Typ;
